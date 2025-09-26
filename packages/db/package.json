@@ -1,21 +1,21 @@
 {
-  "name": "backend",
+  "name": "db",
   "module": "index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "exports": {
+    "./client": "./index.ts"
+  },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "axios": "^1.12.2",
-    "cors": "^2.8.5",
-    "db": "*",
-    "express": "^5.1.0",
-    "zod": "^4.1.11"
+    "@prisma/client": "6.16.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.16.2"
   }
 }
